@@ -45,3 +45,5 @@ while run:
         print(screenstr)
     print('---------------')
     time.sleep(0.5)
+
+#сосал?
