@@ -4,7 +4,7 @@
 3. os
 4. random
 5. csv
-
+основной файл это main code.py
 Для комфортной игры пропишите в консоли Windows:
 
 C:\Users\Mechman\AppData\Local\Programs\Thonny\python.exe "C:\Users\Mechman\Documents\PYTHON\symbol collector.py"
