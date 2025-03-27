@@ -168,7 +168,7 @@ while run:
                     plx-=1
                 if player_leight!=5:
                     player_leight+=2
-                wide_time=20
+                wide_time=25
             elif i[1]=='-':
                 if player_leight==5:
                     player_leight-=2
@@ -186,6 +186,12 @@ while run:
         name=input('enter your name:')
         leaderboard.SetNewScore(name, score)
         run=False
+        time.sleep(1)
     wide_time-=1
     time.sleep(0.2)
     os.system('cls')
+print('--------top 10--------')
+file=open('leaderboard.txt', 'r')
+for i in range(0,10):
+    file.readline(i)
+    print(file.readline(i))
