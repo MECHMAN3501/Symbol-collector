@@ -37,10 +37,10 @@ class Symbol():
         self.y = 0
         self.generated = 0
         '''
-        self.symbol=symbol
-        self.y=0
-        self.x=0
-        self.generated=False
+        self.symbol = symbol
+        self.y = 0
+        self.x = 0
+        self.generated = False
     
     
     def generate(self):
@@ -48,9 +48,9 @@ class Symbol():
         Функция которая генерирует символ
         '''
         global screen
-        self.x=random.randint(2,12)
-        screen[0][self.x]=self.symbol
-        self.generated=True
+        self.x = random.randint(2,12)
+        screen[0][self.x] = self.symbol
+        self.generated = True
     
     
     def fall(self):
@@ -58,25 +58,25 @@ class Symbol():
         Функция которая двигает символ вниз
         '''
         global screen
-        screen[self.y][self.x]=' '
-        self.y+=1
-        screen[self.y][self.x]=self.symbol
+        screen[self.y][self.x] = ' '
+        self.y += 1
+        screen[self.y][self.x] = self.symbol
     
     
     def catch(self):
         '''
         Функция которая обрабатывает ловлю символа платформой
         '''
-        self.generated=False
-        screen[self.y][self.x]=' '
+        self.generated = False
+        screen[self.y][self.x] = ' '
     
     
     def miss(self):
         '''
         Функция которая обрабатывает попадание символа на пол
         '''
-        if self.y==len(screen):
-            self.generated=False
+        if self.y == len(screen):
+            self.generated = False
 
 
 def IsOnRightBorder():
